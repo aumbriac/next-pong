@@ -1,13 +1,12 @@
-import { useRef, useState, useEffect, useCallback, memo, useMemo } from "react";
+import { useRef, useState, useEffect, useCallback, useMemo } from "react";
 import * as THREE from "three";
-import Score from "./Score";
 import { setupCamera, setupRenderer, createScene } from "../utils/sceneUtils";
 import handleKeyPress from "../utils/handleKeyPress";
 import useAnimationFrame from "../utils/useAnimationFrame";
 import updateGame from "../utils/updateGame";
 import handleWindowResize from "../utils/handleWindowResize";
 import GameElements from "../types/GameElements";
-import KeyInstructions from "./KeyInstructions";
+import GameUI from "./GameUI";
 
 export default function Game({ difficulty }) {
   const gameRef = useRef<HTMLDivElement>(null);
@@ -88,9 +87,8 @@ export default function Game({ difficulty }) {
 
   return (
     <>
-      <Score playerScore={score[0]} opponentScore={score[1]} />
+      <GameUI playerScore={score[0]} opponentScore={score[1]} />
       <div ref={gameRef}></div>
-      <KeyInstructions />
     </>
   );
 }

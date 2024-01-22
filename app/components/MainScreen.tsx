@@ -16,7 +16,9 @@ export default function MainScreen({
   return (
     <div className="flex justify-center items-center h-screen bg-gray-800">
       <div className="text-center">
-        <h1 className="text-6xl text-white font-bold mb-4">Next Pong</h1>
+        <h1 className="text-6xl text-white font-mono font-bold mb-4">
+          Next Pong
+        </h1>
         <p className="text-lg text-gray-300 mb-6">
           A free open-source 3D retro pong game built with Next.js and Three.js
         </p>

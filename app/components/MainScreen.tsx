@@ -25,19 +25,19 @@ export default function MainScreen({
         <div className="grid grid-cols-3 gap-4">
           <button
             onClick={() => handleStartGame(EASY)}
-            className="bg-green-500 text-white font-bold py-2 px-4 rounded-full border border-green-500 hover:bg-transparent hover:text-green-500 hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 transition duration-300"
+            className="bg-green-700 text-white font-bold py-2 px-4 rounded-full border border-green-900 hover:bg-transparent hover:text-green-700 hover:border-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 transition duration-300"
           >
             Easy
           </button>
           <button
             onClick={() => handleStartGame(MEDIUM)}
-            className="bg-yellow-500 text-white font-bold py-2 px-4 rounded-full border border-yellow-500 hover:bg-transparent hover:text-yellow-500 hover:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50 transition duration-300"
+            className="bg-yellow-700 text-white font-bold py-2 px-4 rounded-full border border-yellow-900 hover:bg-transparent hover:text-yellow-700 hover:border-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50 transition duration-300"
           >
             Medium
           </button>
           <button
             onClick={() => handleStartGame(HARD)}
-            className="bg-red-500 text-white font-bold py-2 px-4 rounded-full border border-red-500 hover:bg-transparent hover:text-red-500 hover:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 transition duration-300"
+            className="bg-red-700 text-white font-bold py-2 px-4 rounded-full border border-red-900 hover:bg-transparent hover:text-red-700 hover:border-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 transition duration-300"
           >
             Hard
           </button>
